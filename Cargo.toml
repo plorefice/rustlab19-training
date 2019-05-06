@@ -9,3 +9,7 @@ edition = "2018"
 [[bin]]
 name = "ex1"
 path = "src/ex1.rs"
+
+[[bin]]
+name = "ex2"
+path = "src/ex2.rs"
