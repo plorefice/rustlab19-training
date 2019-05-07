@@ -27,5 +27,5 @@ name = "ex5"
 path = "src/ex5.rs"
 
 [[bin]]
-name = "ex6"
-path = "src/ex6.rs"
+name = "ex7"
+path = "src/ex7.rs"
