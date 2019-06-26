@@ -1,4 +1,4 @@
-// Exercise 6 - Structs
+// Exercise 7 - Structs
 
 // A _struct_ is used to group together related custom data.
 // It may contain zero or more _fields_.
