@@ -48,4 +48,13 @@ fn main() {
         "The Manhattan distance between p1 and p2 is {}",
         manhattan(&p1, &p2)
     );
+
+    // EX: Declare an associated function that creates a Point from two i32s.
+    let p3 = Point::new(5, -2);
+
+    // EX: Declare a method version of the manhattan function above.
+    println!(
+        "The Manhattan distance between p2 and p3 is {}",
+        p2.manhattan(&p3)
+    );
 }
