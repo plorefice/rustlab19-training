@@ -33,3 +33,7 @@ path = "src/ex6.rs"
 [[bin]]
 name = "ex7"
 path = "src/ex7.rs"
+
+[[bin]]
+name = "ex8"
+path = "src/ex8.rs"
