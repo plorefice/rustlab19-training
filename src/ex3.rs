@@ -16,6 +16,19 @@ fn plus_one(n: i32) -> i32 {
     // a function's body, the value of the expression is the function's return value.
 
     // EX: Add an expression to return the value of n incremented by 1
+    n + 1
+}
+
+fn say_hello() {
+    println!("Hello!");
+}
+
+fn get_age() -> i32 {
+    24
+}
+
+fn sum_two(a: i32, b: i32) -> i32 {
+    a + b
 }
 
 fn main() {

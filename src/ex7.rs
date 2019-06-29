@@ -3,6 +3,7 @@
 // A _struct_ is used to group together related custom data.
 // It may contain zero or more _fields_.
 // Each _struct_ declares a new type in Rust's type system.
+#[derive(Debug)]
 struct User {
     username: String,
     email: String,
@@ -10,18 +11,30 @@ struct User {
     active: bool,
 }
 
-struct Point {/* TODO: complete me (see last EX below) */}
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl Point {
+    fn new(x: i32, y: i32) -> Self {
+        Point { x, y }
+    }
+
+    fn manhattan(&self, other: &Point) -> i32 {
+        manhattan(self, other)
+    }
+}
 
 fn manhattan(p1: &Point, p2: &Point) -> i32 {
-    /* TODO: complete me (see last EX below) */
-    0
+    (p1.x - p2.x).abs() + (p1.y - p2.y).abs()
 }
 
 fn main() {
     // When creating an instance of a struct, *all* of its fields *must* be initialized.
 
     // EX: Try removing one of the fields from the initialization and build, see what happens.
-    let user1 = User {
+    let mut user1 = User {
         email: String::from("someone@example.com"),
         username: String::from("someusername123"),
         active: true,

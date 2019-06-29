@@ -75,4 +75,7 @@ fn main() {
 
     // EX: Write a `for` cycle to iterate over integers in the range [9..0].
     //     Hint: look for the `.rev()` method in the language reference.
+    for i in (0..10).rev() {
+        println!("{}", i);
+    }
 }

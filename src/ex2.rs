@@ -12,12 +12,15 @@ fn main() {
 
     // EX: Fix this by removing the following line.
     //     You can also "shadow" the previous declaration by reusing "let".
-    the_answer = 43;
+    let the_answer = 43;
 
     // To declare a mutable variable, use 'mut' following the let binding
     let mut i_can_change = 1;
 
     // EX: Increment i_can_change and print its new value
+    i_can_change += 1;
+
+    println!("{} {}", the_answer, i_can_change);
 
     // In most cases, Rust is able to automatically infer a variable's type
     // without the need to write it down.
@@ -32,4 +35,9 @@ fn main() {
     // https://doc.rust-lang.org/1.30.0/book/2018-edition/ch03-02-data-types.html
 
     // EX: Declare and print a char, an arch-dependent unsigned and an array of u8s.
+    let c = 'a';
+    let u = 1000_usize;
+    let a = [1_u8, 2, 3, 4];
+
+    println!("{} {} {:?}", c, u, a);
 }

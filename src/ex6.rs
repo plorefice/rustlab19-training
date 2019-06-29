@@ -7,13 +7,13 @@ fn main() {
     // the binding is initialized.
     let s4;
 
+    let s = String::from("Hello!");
+
     // EX: Try uncommenting the next line and see what happens.
     // println!("s4 contains {}", s4);
 
     // Here we declare an inner scope to demonstrate value lifetimes.
     {
-        let s = String::from("Hello!");
-
         // A reference to a value is declared by prepending an '&' to the variable
         // owning that value. The reference can be used just like the original variable,
         // but _cannot_ be mutated.
@@ -41,7 +41,7 @@ fn main() {
     // in this scope so we might be tempted to use it.
 
     // EX: Uncomment this line and try to understand what the compiler tells you.
-    // println!("s4 is still here and says '{}'", s4);
+    println!("s4 is still here and says '{}'", s4);
 
     // EX: Try modifying the code so that the print above compiles and runs fine.
 }

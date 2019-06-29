@@ -2,14 +2,23 @@
 
 /// Computes the `n`th value of the Fibonacci sequence
 fn fib(n: i32) -> i32 {
-    // EX: Implement using iteration
-    0
+    let mut a = 0;
+    let mut b = 1;
+
+    for _ in 0..n {
+        let tmp = a;
+        a = b;
+        b += tmp;
+    }
+    a
 }
 
 /// Computes the `n`th value of the Fibonacci sequence using recursion.
 fn rfib(n: i32) -> i32 {
-    // EX: Implement using recursion
-    0
+    match n {
+        0 | 1 => n,
+        _ => rfib(n - 1) + rfib(n - 2),
+    }
 }
 
 fn main() {
